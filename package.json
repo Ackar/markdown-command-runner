@@ -3,6 +3,11 @@
 	"displayName": "Markdown Command Runner",
 	"description": "Make shell commands inside markdown files runnable",
 	"version": "0.0.1",
+	"publisher": "Sycl",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Ackar/markdown-command-runner.git"
+	},
 	"engines": {
 		"vscode": "^1.37.0"
 	},
