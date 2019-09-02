@@ -1,7 +1,7 @@
 {
 	"name": "markdown-command-runner",
 	"displayName": "Markdown Command Runner",
-	"description": "Make shell commands inside markdown files runnable",
+	"description": "Easily run shell commands in markdown files",
 	"version": "0.0.1",
 	"publisher": "Sycl",
 	"repository": {
