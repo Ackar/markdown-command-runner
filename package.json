@@ -4,6 +4,7 @@
 	"description": "Easily run shell commands in markdown files",
 	"version": "0.1.0",
 	"publisher": "Sycl",
+	"icon": "images/icon.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/Ackar/markdown-command-runner.git"
@@ -19,12 +20,10 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "markdown.run.command",
-				"title": "Run markdown command"
-			}
-		]
+		"commands": [{
+			"command": "markdown.run.command",
+			"title": "Run markdown command"
+		}]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
