@@ -1,7 +1,7 @@
 # markdown-command-runner
 
 `markdown-command-runner` is a lightweight VS Code extension to run commands in READMEs in one-click.
-It adds a CodeLens action to run shell snippets in any markdown files.
+It adds a CodeLens action to run shell snippets in any markdown file.
 
 ### How does it work?
 `markdown-command-runner` detects `` ```sh `` and `` ```bash `` snippets in markdown files an adds
