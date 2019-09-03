@@ -12,16 +12,10 @@ export class CommandCodeLensProvider implements vscode.CodeLensProvider {
         var commandStartLine = 0;
         for (var i = 0; i < lines.length; i++) {
             const line = lines[i];
-            if (line.startsWith('```sh') || line.startsWith('```bash')) {
-                inCommand = true;
-                commandStartLine = i;
-                continue;
-            }
-
             if (inCommand) {
                 if (line === '```') {
                     const cmd: vscode.Command = {
-                        title: 'Run command',
+                        title: 'Run command in terminal',
                         command: 'markdown.run.command',
                         arguments: [{ command: currentCommand }]
                     };
@@ -34,6 +28,13 @@ export class CommandCodeLensProvider implements vscode.CodeLensProvider {
                 }
 
                 currentCommand += line + '\n';
+                continue;
+            }
+
+            if (line.startsWith('```') || line.startsWith('```sh') || line.startsWith('```bash')) {
+                inCommand = true;
+                commandStartLine = i;
+                continue;
             }
         }
         return codeLenses;
