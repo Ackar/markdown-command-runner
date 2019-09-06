@@ -1,7 +1,7 @@
 {
 	"name": "markdown-command-runner",
 	"displayName": "Markdown Command Runner",
-	"description": "Easily run shell commands in markdown files",
+	"description": "Easily run commands in markdown files",
 	"version": "0.1.2",
 	"publisher": "Sycl",
 	"icon": "images/icon.png",
@@ -20,12 +20,10 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "markdown.run.command",
-				"title": "Run markdown command"
-			}
-		]
+		"commands": [{
+			"command": "markdown.run.command",
+			"title": "Run markdown command"
+		}]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
