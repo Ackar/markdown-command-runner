@@ -11,7 +11,7 @@ export class CommandCodeLensProvider implements vscode.CodeLensProvider {
         var currentCommand = '';
         var commandStartLine = 0;
         for (var i = 0; i < lines.length; i++) {
-            const line = lines[i];
+            const line = lines[i].trim();
             if (inCommand) {
                 if (line === '```') {
                     const cmd: vscode.Command = {
