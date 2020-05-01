@@ -2,7 +2,7 @@
 	"name": "markdown-command-runner",
 	"displayName": "Markdown Command Runner",
 	"description": "Easily run commands in markdown files",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"publisher": "Sycl",
 	"icon": "images/icon.png",
 	"repository": {
