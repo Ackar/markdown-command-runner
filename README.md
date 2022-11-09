@@ -13,4 +13,4 @@ a `Run command in terminal` action at the top.
 When clicked the associated snippet is run the current active terminal or a new one if it is busy.
 
 
-*Contributions welcome!*
+*This extension is not actively maintained but contributions are welcome!*
